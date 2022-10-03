@@ -3,9 +3,9 @@ layout: page
 title: vvidday's Project Portfolio Page
 ---
 
-### Project: ModtRekt
+### Project: modtrekt
 
-ModtRekt helps undergraduate students to plan their studies by allowing students to choose the modules they would like to take and add tasks/deadlines for each of them.
+modtrekt helps undergraduate students to plan their studies by allowing students to choose the modules they would like to take and add tasks/deadlines for each of them.
 
 Given below are my contributions to the project.
 

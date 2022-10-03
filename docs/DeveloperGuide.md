@@ -287,14 +287,14 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
 ### Use cases
 
-(For all use cases below, the **System** is the `ModtRekt` and the **Actor** is the `user`, unless specified otherwise)
+(For all use cases below, the **System** is the `modtrekt` and the **Actor** is the `user`, unless specified otherwise)
 
 **Use case: View all active tasks and deadlines**
 
 **MSS**
 
 1. User requests to view all active tasks and deadlines
-2. ModtRekt shows all active tasks and deadlines, categorised into modules
+2. modtrekt shows all active tasks and deadlines, categorised into modules
 
     Use case ends.
 
@@ -302,7 +302,7 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
 * 2a. The list is empty. 
 
-  * 2a.1 ModtRekt displays "No active tasks or deadlines". 
+  * 2a.1 modtrekt displays "No active tasks or deadlines". 
     
     Use case ends
 
@@ -311,9 +311,9 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 **MSS**
 
 1.  User requests to add a task 
-2.  ModtRekt shows a list of modules
+2.  modtrekt shows a list of modules
 3.  User requests to add a task to specific module in the list
-4.  ModtRekt adds the task
+4.  modtrekt adds the task
 
     Use case ends.
 
@@ -325,7 +325,7 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
 * 3a. The given index is invalid.
 
-    * 3a1. ModtRekt shows an error message.
+    * 3a1. modtrekt shows an error message.
 
       Use case resumes at step 2.
 
@@ -334,9 +334,9 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 **MSS**
 
 1.  User requests to add a deadline
-2.  ModtRekt shows a list of modules
+2.  modtrekt shows a list of modules
 3.  User requests to add a deadline to specific module in the list
-4.  ModtRekt adds the deadline
+4.  modtrekt adds the deadline
 
     Use case ends.
 
@@ -348,7 +348,7 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
 * 3a. The given index is invalid.
 
-    * 3a1. ModtRekt shows an error message.
+    * 3a1. modtrekt shows an error message.
 
       Use case resumes at step 2.
 
@@ -357,11 +357,11 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 **MSS**
 
 1. User requests to remove a task
-2. ModtRekt shows a list of modules
+2. modtrekt shows a list of modules
 3. User requests to remove a task from specific module in the list
-4. ModtRekt shows a list of tasks in that module
+4. modtrekt shows a list of tasks in that module
 5. User requests to remove a specific task of the module in the list
-6. ModtRekt removes the task
+6. modtrekt removes the task
 
     Use case ends.
 
@@ -373,7 +373,7 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
 * 3a. The given index is invalid.
 
-    * 3a1. ModtRekt shows an error message.
+    * 3a1. modtrekt shows an error message.
 
       Use case resumes at step 2.
 
@@ -383,7 +383,7 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
 * 5a. The given index is invalid.
 
-    * 5a1. ModtRekt shows an error message.
+    * 5a1. modtrekt shows an error message.
 
       Use case resumes at step 4.
 
@@ -392,7 +392,7 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 **MSS**
 
 1.  User requests to view what modules he has left for graduation
-2.  ModtRekt shows a list of modules, categorised into each requirement
+2.  modtrekt shows a list of modules, categorised into each requirement
 
     Use case ends.
 
@@ -400,7 +400,7 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
 * 2a. All the requirements are met.
 
-    * 2a1. ModtRekt congratulates user.
+    * 2a1. modtrekt congratulates user.
 
       Use case ends.
 

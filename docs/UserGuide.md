@@ -3,9 +3,9 @@ layout: page
 title: User Guide
 ---
 
-# ModtRekt User Guide
+# modtrekt User Guide
 
-ModtRekt is a **desktop app for managing modules and tasks, optimized for use via a Command Line Interface** (CLI) while still having the benefits of a Graphical User Interface (GUI).
+modtrekt is a **desktop app for managing modules and tasks, optimized for use via a Command Line Interface** (CLI) while still having the benefits of a Graphical User Interface (GUI).
 
 # Table of Contents
 - [UI Mockups](#ui-mockups)
@@ -22,7 +22,7 @@ ModtRekt is a **desktop app for managing modules and tasks, optimized for use vi
 
 1. Ensure you have Java 11 or above installed on your computer.
 
-1. Download the latest `ModtRekt.jar` from [here](https://github.com/AY2223S1-CS2103T-W10-4/tp/releases).
+1. Download the latest `modtrekt.jar` from [here](https://github.com/AY2223S1-CS2103T-W10-4/tp/releases).
 
 1. Copy the file to the folder you want to use as the home folder for your module tracker.
 

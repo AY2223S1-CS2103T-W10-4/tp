@@ -3,12 +3,12 @@ layout: page
 title: Jonathan Tay's Project Portfolio Page
 ---
 
-### Project: ModtRekt
+### Project: modtrekt
 
-ModtRekt is a desktop app which helps undergraduate students plan their modules over their course
+modtrekt is a desktop app which helps undergraduate students plan their modules over their course
 of study, and manage their tasks and deadlines for each of them.
 
-ModtRekt is optimized for use via a CLI while still having the benefits of a GUI.
+modtrekt is optimized for use via a CLI while still having the benefits of a GUI.
 
 Given below are my contributions to the project.
 

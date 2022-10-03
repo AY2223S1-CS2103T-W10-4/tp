@@ -3,9 +3,9 @@ layout: page
 title: Dominic Berzin's Project Portfolio Page
 ---
 
-### Project: ModtRekt
+### Project: modtrekt
 
-ModtRekt is a desktop app for managing modules and tasks, optimized for use via a Command Line Interface (CLI) while still having the benefits of a Graphical User Interface (GUI).
+modtrekt is a desktop app for managing modules and tasks, optimized for use via a Command Line Interface (CLI) while still having the benefits of a Graphical User Interface (GUI).
 
 Given below are my contributions to the project.
 

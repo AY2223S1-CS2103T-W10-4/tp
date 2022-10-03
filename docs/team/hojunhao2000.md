@@ -3,9 +3,9 @@ layout: page
 title: Ho Jun Hao's Project Portfolio Page
 ---
 
-### Project: ModtRekt
+### Project: modtrekt
 
-ModtRekt - is a desktop app for undergraduates of NUS to manage their modules and tasks. It is optimized for use via a Command Line Interface (CLI) while still having the benefits of a Graphical User Interface (GUI).
+modtrekt - is a desktop app for undergraduates of NUS to manage their modules and tasks. It is optimized for use via a Command Line Interface (CLI) while still having the benefits of a Graphical User Interface (GUI).
 
 Given below are my contributions to the project.
 
