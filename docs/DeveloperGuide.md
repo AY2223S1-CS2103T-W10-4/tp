@@ -510,12 +510,12 @@ We check for the presence of the `-a` flag to decide whether to display done tas
 
 The following diagram shows the execution and control flow of the `list module` command.
 
-<img src="images/modulePUMLs/ListModule/ModuleListingPathExecution.png" width="1000" />
+<img src="images/ModulePUMLs/ListModule/ModuleListingPathExecution.png" width="1000" />
 
 The sequence diagram below details the interactions between the command and the model
 for the `ls mod` and `ls mod -a` commands:
 
-<img src="images/modulePUMLs/ListModule/ModuleListingSequenceDiagram.png" width="1000" />
+<img src="images/ModulePUMLs/ListModule/ModuleListingSequenceDiagram.png" width="1000" />
 
 The predicates defined by `Model.PREDICATE_SHOW_ALL_MODULES` and `PREDICATE_HIDE_DONE_MODULES` are used to filter
 the tasks displayed in the UI via the `updateFilteredModuleList` method in the `Model` interface.
