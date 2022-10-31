@@ -16,31 +16,33 @@ ModtRekt is a **desktop app for managing modules and tasks**, optimized for use 
 
 ## Quick Start
 
-1. Ensure you have Java 11 or above installed on your computer.
+1. You should have Java 11 or above installed on your computer!
 
-1. Download the latest `modtrekt.jar` from [here](https://github.com/AY2223S1-CS2103T-W10-4/tp/releases).
+2. Download the latest `modtrekt.jar` from [here](https://github.com/AY2223S1-CS2103T-W10-4/tp/releases).
 
-1. Copy the file to the folder you want to use as the home folder for your module tracker.
+3. Copy the file to the folder you want to use as the home folder for _ModtRekt_ App!
 
-1. Double-click the file to start the app. The GUI similar to the screenshot above should appear in a few seconds. Note how the app contains some sample data.
+4. Double-click the JAR file to start the app. An application (similar to the screenshot above) will pop up in a few seconds.
 
-1. Type the command in the command box and press `Enter` to execute it. e.g. typing `help` and pressing `Enter` will open the help window.
+> Note that we provide a sample data for you !
 
-1.  Here are some example commands you can try:
+5. Type the command you want to use in the command box at the bottom and press `Enter` to execute it. e.g. typing `help` and pressing `Enter` will open the help window.
+
+6. Here are some example commands you can try:
 
     1. `add module CS2103T`: Adds a module called CS2103T to the module tracker.
 
-    1. `cd CS2103T`: Sets the current module page to CS2103T.
+    2. `cd CS2103T`: Sets the current module page to CS2103T.
 
-    1. `add task "tP v1.3" -d 2022-10-28`: Adds a task called iP week 6, with a deadline of 28/10/2022, to the module tracker.
+    3. `add task "tP v1.3" -d 2022-10-28`: Adds a task called iP week 6, with a deadline of 28/10/2022, to the module tracker.
 
-    1. `list task`: Lists all the active tasks.
+    4. `list task`: Lists all the active tasks.
+   
+    5. `remove task 1`: Removes the first task of CS2103T.
 
-   1. `remove task 1`: Removes the first task of CS2103T.
+8.  Type `exit` when you are finished with your business :)
 
-   1. `exit`: Exits the app.
-
-   1. Refer to the Features below for details of each command.
+9. You can refer to the Features below for details of each command.
 
 ## General Command Syntax
 
@@ -109,11 +111,11 @@ Sample execution of command `help`:
 
 Exits the application.
 
-## Modules
+### Modules
 
 #### Adding a module: `add module`
 
-Adds a module to the application.
+This command adds a module to your list!
 
 To allow our users to easily add modules via their module code, our module information is fetched from 
 [NUSMods](https://nusmods.com/modules?sem[0]=1&sem[1]=2&sem[2]=3&sem[3]=4),
@@ -156,7 +158,7 @@ Sample execution of command `add mod CCA -n Volleyball -cr 0`:
 
 #### Removing a module: `remove module`
 
-Deletes a module from the program. Users specify a module code to delete.
+This command lets you delete a module from the program. You should specify a module code to delete!
 
 Format: `remove module <module code>`
 
@@ -178,14 +180,18 @@ Sample execution of command `remove mod CS2100`:
 
 #### Entering a module: `cd`
 
-Sets the current module page to the specified module.
+If you want to enter a specific module, you can use this command!
+
+This command sets the current module page to the specified module.
 
 Format: `cd <module code>`
 
-Allows user to view information relating to the specified module.
+You can see the information related to the specified module here.
 - Scopes the user’s actions to the specified module.
 - The module code is case-insensitive e.g. `cs2103t` will match **CS2103T**
 - Module code must match an existing module.
+
+> :warning: You can't cd to a module that you already marked as done !!!
 
 Format: `cd <module code>`
 
@@ -197,11 +203,11 @@ Sample execution of command `cd CS2100`:
 
 #### Exiting a module: `cd`
 
-Exits the current module page to revert to showing all modules.
+To exit viewing the current module page and revert to showing all modules, use this command!
 
 Format: `cd ..`
 
-Allows user to view all active tasks from all modules instead of only those belonging to a specific module.
+Allows you to view all active tasks from all modules instead of only those belonging to a specific module.
 
 Examples:
 - `cd ..`
@@ -211,7 +217,7 @@ Sample execution of command `cd ..`:
 
 #### Marks a module as done: `done module`
 
-Marks a module as done.
+You can mark a module as done !
 
 - The module code is case insensitive e.g. `cs2103t` will match **CS2103T**
 - After you mark a module as done, your total completed module credits (MCs) will be updated.
@@ -233,7 +239,7 @@ Marks a module as undone.
 
 - The module code is case insensitive e.g. `cs2103t` will match **CS2103T**
 - After you unmark a module as done, your total completed module credits (MCs) will be updated.
-- Unmarking a module will not affect its tasks, i.e. your original tasks will not be marked as undone)
+- Unmarking a module will not affect its tasks, i.e. your original tasks will not be marked as undone
 
 Format: `undone module <module code>`
 
@@ -247,7 +253,7 @@ Sample execution of command `done module CS2105`, with CS2105 marked as done ini
 
 #### Listing all modules: `list module`
 
-Shows all the modules you have added.
+This command will show all the modules you have added.
 - Using the command without `-a` flag will show you only undone modules.
 - Using the command with `-a` flag will show you all modules, including those marked as done.
 
@@ -263,6 +269,7 @@ Sample execution of command `list module -a`:
 
 #### Editing modules: `edit module`
 
+You can edit your existing module's information!
 Changes current parameters of selected module.
 
 - The module code is case insensitive e.g. `cs2103t` will match **CS2103T**
@@ -279,11 +286,13 @@ Examples:
 
 ![](./images/UserGuidePictures/edit_module.png)
 
-## Tasks
+### Tasks
 
 #### Adding a task: `add task`
 
-Adds a task under a specific module.
+To add a task under a specific module, use this command. 
+
+> :warning: You can't add a task to a module that you already marked as done !!!
 
 - You may have selected a module (i.e. used the [`cd` command](#entering-a-module-cd) to select a module).
 - You can specify a deadline for the task with the `-d` flag along with the deadline in YYYY-MM-DD format.
@@ -311,7 +320,9 @@ Sample execution of command `add "Assignment 1" -c CS2100 -d 2022-10-29`:
 
 #### Removing a task: `remove task`
 
-Removes a task under a specific module.
+This command lets you delete a task specific to a module. 
+
+You should specify the index of the task. If you are deleting a task from the homepage, don't forget to specify the module code!
 
 - The task index must be a non-zero positive integer, and have a corresponding task indicated with `#` in the task list.
 
@@ -356,7 +367,7 @@ Sample execution of command `undone task 6` with 6 active tasks displayed:
 
 #### Listing all tasks: `list task`
 
-Shows only the active tasks (i.e. tasks which are undone) by default.
+This command shows only the active tasks (i.e. tasks which are undone) by default.
 
 - Include the optional `-a` flag to the command to show all tasks, including those that are done.
 - If you have used the [`cd` command](#entering-a-module-cd) to select a module, this will
@@ -372,7 +383,7 @@ Examples:
 
 #### Editing tasks: `edit task`
 
-Changes current parameters of selected task
+Yes, you can changes the current parameters of selected task!
 
 - Index must be a valid integer. Users may use the list tasks command to find the indexes of their tasks.
 - Order of optional parameters does not matter.
