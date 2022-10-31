@@ -472,7 +472,7 @@ The following diagram shows the execution and control flow of the `done` command
 
 The diagram below shows how the `done` command work with input `done module CS1101S`
 
-<img src="images/ModulePUMLs/DoneModule/ModuleDoneSequenceDiagram.png" width="1200" />
+<img src="images/ModulePUMLs/DoneModule/ModuleDoneSequenceDiagram.png" width="1000" />
 
 Notice how we explicitly prevent a done module from being marked as done again. Even though marking a done module as
 done again is inconsequential from a data perspective (nothing in a `Module` changes other than the creation of a new
