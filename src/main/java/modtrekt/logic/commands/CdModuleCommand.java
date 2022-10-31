@@ -41,6 +41,9 @@ public class CdModuleCommand extends Command {
                 throw new CommandException(String.format("Module code %s does not exist.",
                         moduleCode.toString()));
             }
+            if (model.parseModuleFromCode(moduleCode).isDone()) {
+                throw new CommandException(String.format("Module code %s is marked as done!", moduleCode));
+            }
             model.setCurrentModule(moduleCode);
             return new CommandResult(String.format("Changed current module to %s!", moduleCode.toString()));
         } catch (IllegalArgumentException exception) {
