@@ -74,7 +74,8 @@ public class AddTaskCommand extends Command {
             throw new CommandException(String.format("Module code %s does not exist", modCode));
         }
         // If module is marked as done, user can't add tasks
-        if (modCode != null && model.parseModuleFromCode(modCode).isDone()) {
+        if (modCode != null && !model.hasModuleWithModCode(modCode)
+                && model.parseModuleFromCode(modCode).isDone()) {
             throw new CommandException(String.format("Module code %s is marked as done!", modCode));
         }
 
